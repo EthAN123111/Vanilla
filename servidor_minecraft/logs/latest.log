@@ -1,0 +1,45 @@
+[16:00:47] [ServerMain/ERROR]: Failed to load properties from file: server.properties
+java.nio.file.NoSuchFileException: server.properties
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.base/java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at aqf.b(SourceFile:62) ~[server-1.20.6.jar:?]
+	at aqc.a(SourceFile:140) ~[server-1.20.6.jar:?]
+	at aqd.<init>(SourceFile:12) ~[server-1.20.6.jar:?]
+	at net.minecraft.server.Main.main(SourceFile:114) ~[server-1.20.6.jar:?]
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[16:00:47] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:00:49] [ServerMain/INFO]: No existing world data, creating new world
+[16:00:50] [ServerMain/INFO]: Loaded 1175 recipes
+[16:00:51] [ServerMain/INFO]: Loaded 1276 advancements
+[16:00:51] [Server thread/INFO]: Starting minecraft server version 1.20.6
+[16:00:51] [Server thread/INFO]: Loading properties
+[16:00:51] [Server thread/INFO]: Default game type: SURVIVAL
+[16:00:51] [Server thread/INFO]: Generating keypair
+[16:00:52] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:00:52] [Server thread/INFO]: Using epoll channel type
+[16:00:52] [Server thread/WARN]: **** FAILED TO BIND TO PORT!
+[16:00:52] [Server thread/WARN]: The exception was: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+[16:00:52] [Server thread/WARN]: Perhaps a server is already running on that port?
+[16:00:52] [Server thread/ERROR]: Encountered an unexpected exception
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.y(SourceFile:710) ~[server-1.20.6.jar:?]
+	at net.minecraft.server.MinecraftServer.a(SourceFile:275) ~[server-1.20.6.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[16:00:52] [Server thread/ERROR]: This crash report has been saved to: /workspaces/Vanilla/servidor_minecraft/./crash-reports/crash-2024-05-28_16.00.52-server.txt
+[16:00:52] [Server thread/INFO]: Stopping server
+[16:00:52] [Server thread/INFO]: Saving worlds
+[16:00:52] [Server thread/ERROR]: Exception stopping the server
+java.lang.NullPointerException: Cannot invoke "arf.C_()" because "$$5" is null
+	at net.minecraft.server.MinecraftServer.a(SourceFile:555) ~[server-1.20.6.jar:?]
+	at net.minecraft.server.MinecraftServer.v(SourceFile:614) ~[server-1.20.6.jar:?]
+	at aqb.v(SourceFile:553) ~[server-1.20.6.jar:?]
+	at net.minecraft.server.MinecraftServer.y(SourceFile:729) ~[server-1.20.6.jar:?]
+	at net.minecraft.server.MinecraftServer.a(SourceFile:275) ~[server-1.20.6.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
